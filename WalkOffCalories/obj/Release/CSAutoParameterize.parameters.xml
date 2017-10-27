@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BurningWalk-Web.config Connection String" description="BurningWalk Connection String used in web.config by the application to access the database." defaultValue="data source=sql5030.smarterasp.net;initial catalog=DB_A12AA1_Fitness;user id=DB_A12AA1_Fitness_admin;password=Aerobolt4;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ross\\Documents\\Visual\ Studio\ 2013\\Projects\\WalkOffCalories\\WalkOffCalories\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BurningWalk']/@connectionString" />
+  </parameter>
+  <parameter name="DB_A12AA1_FitnessEntities-Web.config Connection String" description="DB_A12AA1_FitnessEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.WalkSession.csdl|res://*/Models.WalkSession.ssdl|res://*/Models.WalkSession.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=sql5030.smarterasp.net;initial catalog=DB_A12AA1_Fitness;user id=DB_A12AA1_Fitness_admin;password=Aerobolt4;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ross\\Documents\\Visual\ Studio\ 2013\\Projects\\WalkOffCalories\\WalkOffCalories\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DB_A12AA1_FitnessEntities']/@connectionString" />
+  </parameter>
+  <parameter name="WalkSession-Web.config Connection String" description="WalkSession Connection String used in web.config by the application to access the database." defaultValue="data source=sql5030.smarterasp.net;initial catalog=DB_A12AA1_Fitness;user id=DB_A12AA1_Fitness_admin;password=Aerobolt4;multipleactiveresultsets=True;application name=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ross\\Documents\\Visual\ Studio\ 2013\\Projects\\WalkOffCalories\\WalkOffCalories\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WalkSession']/@connectionString" />
+  </parameter>
+</parameters>

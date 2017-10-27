@@ -1,0 +1,65 @@
+﻿@model WalkOffCalories.Models.Walk
+
+@{
+    ViewBag.Title = "Caculator";
+}
+
+<div class="container">
+    <h1>Walking Calorie Burn Calculator</h1>
+</div>
+<br>
+
+@using (Html.BeginForm("Calculate", "Calculator", FormMethod.Post))
+    {
+    @Html.AntiForgeryToken()
+<div class="form-horizontal">
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="PersonHeaviness">Weight (lbs)</label>
+        @Html.EditorFor(model => Model.PersonHeaviness, new { htmlAttributes = new { @class = "form-control", type = "number", max = 1500, min = 25} })
+        @Html.ValidationMessageFor(model => Model.PersonHeaviness, "", new { @class = "badge" })
+
+
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="PersonHeight">Height (ft)</label>
+        @Html.EditorFor(model => Model.PersonFeet, new { htmlAttributes = new { @class = "time-entry", type = "number", max = 11, min = 3 } })  &nbsp;&nbsp;(in) &nbsp;&nbsp;
+        @Html.EditorFor(model => Model.PersonInches, new { htmlAttributes = new { @class = "time-entry", type = "number", max = 11, min = 0 } })
+
+
+         @Html.ValidationMessageFor(model => Model.PersonFeet, "", new { @class = "badge" })
+
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="Distance">Distance (mi)</label>
+        @Html.EditorFor(model => Model.Distance, new { htmlAttributes = new { @class = "form-control", type = "number", max = 100, min = 1} })
+        @Html.ValidationMessageFor(model => Model.Distance, "", new { @class = "badge" })
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="Time">Time</label> 
+        @Html.EditorFor(model => Model.WalkHours, new { htmlAttributes = new { @class = "time-entry ", max = 11, min = 0, placeholder = "hh" } }) <b>:</b>
+        @Html.EditorFor(model => Model.WalkMinutes, new { htmlAttributes = new { @class = "time-entry", max = 59, min = 0, placeholder = "mm" } }) <b>:</b>
+        @Html.EditorFor(model => Model.WalkSeconds, new { htmlAttributes = new { @class = "time-entry", max = 59, min = 0, placeholder = "ss" } })
+
+
+    </div>
+<div> @Html.ValidationMessageFor(model => Model.WalkMinutes, "", new { @class = "badge" })
+    <br>  <br>
+
+    </div>
+
+        <input type="submit" value="Calculate" class="btn  btn-primary">
+
+    <hr />
+    <div id=calories>
+
+          <h2> Burned @Html.DisplayFor(model => model.CalorieCount) Calories</h2>
+
+    </div><hr />
+
+</div>
+
+    }

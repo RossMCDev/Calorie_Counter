@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="calorie-counter" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Ross\\Documents\\Visual\ Studio\ 2013\\Projects\\WalkOffCalories\\WalkOffCalories\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Ross\\Documents\\Visual\ Studio\ 2013\\Projects\\WalkOffCalories\\WalkOffCalories\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="BurningWalk-Web.config Connection String" description="" value="data source=sql5030.smarterasp.net;initial catalog=DB_A12AA1_Fitness;user id=DB_A12AA1_Fitness_admin;password=Aerobolt4;multipleactiveresultsets=True;application name=EntityFramework;App=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ross\\Documents\\Visual\ Studio\ 2013\\Projects\\WalkOffCalories\\WalkOffCalories\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BurningWalk']/@connectionString" />
+  </parameter>
+  <parameter name="DB_A12AA1_FitnessEntities-Web.config Connection String" description="" value="metadata=res://*/Models.WalkSession.csdl|res://*/Models.WalkSession.ssdl|res://*/Models.WalkSession.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=sql5030.smarterasp.net;Initial Catalog=DB_A12AA1_Fitness;User ID=DB_A12AA1_Fitness_admin;Password=Aerobolt4;MultipleActiveResultSets=True;Application Name=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ross\\Documents\\Visual\ Studio\ 2013\\Projects\\WalkOffCalories\\WalkOffCalories\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DB_A12AA1_FitnessEntities']/@connectionString" />
+  </parameter>
+  <parameter name="WalkSession-Web.config Connection String" description="" value="Data Source=sql5030.smarterasp.net;Initial Catalog=DB_A12AA1_Fitness;User ID=DB_A12AA1_Fitness_admin;Password=Aerobolt4;MultipleActiveResultSets=True;Application Name=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ross\\Documents\\Visual\ Studio\ 2013\\Projects\\WalkOffCalories\\WalkOffCalories\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WalkSession']/@connectionString" />
+  </parameter>
+</parameters>

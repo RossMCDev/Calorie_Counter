@@ -1,0 +1,64 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 90px;
+        background: url('fresh-spring.jpg') center fixed
+
+}
+
+.body-content {
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+input,
+select,
+textarea {
+max-width: 300px;
+min-width: 60px;}
+
+.backdrop {
+    background-color: rgba(72, 111, 189, 0.45);
+    padding: 20px 46px;
+	border-radius: 5px;
+    width:100%;
+    min-width:initial;
+    margin-top:30px;
+}
+
+
+
+h2 {
+                               text-align: center;
+
+     font-family:'Century Gothic','Pathway Gothic One',sans-serif;
+                                font-size:20px;
+
+}
+
+h1 {
+                text-align: center;
+                font-family:'Century Gothic','Pathway Gothic One',sans-serif;
+                font-size:25px;
+                font-weight: 200;
+}
+
+
+
+
+.time-entry {
+  width: 34px;
+  height: 34px;
+  font-size: 14px;
+
+}
+
+
+
+label {
+
+font-weight:100;
+
+}
+
+
